@@ -1,9 +1,9 @@
 :root {
   --primary-color: #f6f5fb;
   --primary-text-color: #0b0334;
-  --secondary-color: #E2E1F3;
-  --secondary-text-color: #3513AD;
-  --gray-light: #8E8BA2;
+  --secondary-color: #e2e1f3;
+  --secondary-text-color: #3513ad;
+  --gray-light: #8e8ba2;
 }
 
 *,
@@ -17,7 +17,13 @@
 
 body {
   background-color: var(--primary-color);
-  padding: 2rem 4rem;
+  padding: 5rem 10rem;
+}
+
+@media (max-width: 49em) {
+  body {
+    padding: 5rem;
+  }
 }
 
 html {
@@ -25,9 +31,15 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 49em) {
+@media (max-width: 64em) {
   html {
     font-size: 50%;
+  }
+}
+
+@media (max-width: 49em) {
+  html {
+    font-size: 40%;
   }
 }
 
@@ -37,5 +49,21 @@ body {
   color: var(--primary-text-color);
   line-height: 2;
   font-size: 1.6rem;
+}
+
+.header .navigation {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+@media (max-width: 49em) {
+  .header .navigation {
+    font-size: 3rem;
+  }
+}
+
+.header .navigation .logo {
+  color: var(--gray-light);
+  font-weight: 400;
 }
 /*# sourceMappingURL=index.css.map */

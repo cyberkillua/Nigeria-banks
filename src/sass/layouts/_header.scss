@@ -1,0 +1,13 @@
+.header {
+  .navigation {
+    font-size: 4rem;
+    font-weight: 600;
+    @include small-screen {
+      font-size: 3rem;
+    }
+    .logo {
+      color: var(--gray-light);
+      font-weight: 400;
+    }
+  }
+}
