@@ -28,7 +28,7 @@ body {
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @media (max-width: 64em) {
@@ -51,6 +51,12 @@ body {
   font-size: 1.6rem;
 }
 
+.header {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+}
+
 .header .navigation {
   font-size: 4rem;
   font-weight: 600;
@@ -65,5 +71,65 @@ body {
 .header .navigation .logo {
   color: var(--gray-light);
   font-weight: 400;
+}
+
+.header-primary {
+  margin: 10rem auto 0 auto;
+  text-align: center;
+  width: 45%;
+}
+
+@media (max-width: 64em) {
+  .header-primary {
+    width: 60%;
+  }
+}
+
+@media (max-width: 49em) {
+  .header-primary {
+    width: 100%;
+  }
+}
+
+.header-primary-text {
+  font-size: 4.11rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.header-primary-search {
+  margin-top: 2rem;
+  height: 5rem;
+}
+
+.header-primary-search input {
+  width: 90%;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+.header::after {
+  content: "";
+  background: url("../assets/ECONOMY.svg") no-repeat right center/auto;
+  position: absolute;
+  top: 0%;
+  right: -20%;
+  opacity: 0.5;
+  height: 60rem;
+  width: 70rem;
+  z-index: -1;
+}
+
+@media (max-width: 64em) {
+  .header::after {
+    background: url("../assets/ECONOMY.svg") no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=index.css.map */

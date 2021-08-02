@@ -10,7 +10,7 @@ const Header = () => {
           <p className="header-primary-text">
                Search for any Nigerian bank USSD 
           </p>
-          <div className="header-search">
+          <div className="header-primary-search">
               <input type="text" placeholder="Bank name" />
           </div>
       </section>
