@@ -18,14 +18,13 @@ body {
   padding: 5rem 10rem;
   // position: relative;
   @include small-screen {
-    padding: 5rem;
+    padding: 5rem 3rem;
   }
 }
 
 
 html {
   font-size: 62.5%;
-  // scroll-behavior: smooth;
   overflow-x: hidden;
 
   @include medium-screen {

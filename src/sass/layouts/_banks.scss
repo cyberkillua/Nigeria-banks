@@ -1,0 +1,32 @@
+.main-banks {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+  margin-top: 10rem;
+  padding: 5rem 0;
+  &-grid {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    @include medium-screen {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include small-screen {
+      grid-template-columns: repeat(1, 1fr);
+      width: 60%;
+    }
+  }
+  .main-banks:last-of-type {
+    @include small-screen {
+      margin-bottom: 2rem;
+    }
+  }
+  .bank {
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    &-logo {
+      height: 5rem;
+    }
+  }
+}
