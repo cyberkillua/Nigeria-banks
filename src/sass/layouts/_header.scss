@@ -3,10 +3,37 @@
   height: 70vh;
   width: 100%;
   .navigation {
+    display: flex;
+    align-items: center;
     font-size: 4rem;
     font-weight: 600;
     @include small-screen {
       font-size: 3rem;
+    }
+    &-search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      width: 30%;
+      height: 5rem;
+      border: 1px solid var(--gray-light);
+      padding: 1rem;
+      font-size: 2rem;
+
+      input {
+        border: none;
+        height: 100%;
+        width: 90%;
+        padding: 1rem;
+        background-color: inherit;
+      }
+      input:focus-visible {
+        outline: none;
+      }
+     
+      .icon {
+        font-size: 5rem;
+      }
     }
     .logo {
       color: var(--gray-light);
@@ -29,6 +56,7 @@
       font-size: 4.11rem;
       font-weight: 600;
       line-height: 1.5;
+      letter-spacing: -1px;
     }
     &-search {
       margin-top: 2rem;
