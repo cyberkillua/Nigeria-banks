@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
   return (
     <div className="App">
-      <Header />
+      <Header data={data} setData={setData}/>
       <Banks data={data} setData={setData}/>
       <Footer />
     </div>
