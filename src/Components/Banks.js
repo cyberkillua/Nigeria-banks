@@ -22,6 +22,7 @@ const Banks = (props) => {
                 ) {
                   return item;
                 }
+                
               })
               .map((item) => (
                 <div className="bank" key={item.code}>
