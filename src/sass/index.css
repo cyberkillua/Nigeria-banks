@@ -239,11 +239,17 @@ body {
 }
 
 .footer {
-  margin-top: 2rem;
+  margin: 5rem 0;
   text-align: center;
 }
 
 .footer-text {
   font-size: 2rem;
+}
+
+.footer .name {
+  color: var(--gray-light);
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=index.css.map */
