@@ -4,11 +4,11 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 
 function App() {
-  const [data, setData] = useState([]);
+  const [search, setSearch] = useState("");
   return (
     <div className="App">
-      <Header data={data} setData={setData}/>
-      <Banks data={data} setData={setData}/>
+      <Header search={search} setSearch={setSearch} />
+      <Banks search={search} setSearch={setSearch} />
       <Footer />
     </div>
   );

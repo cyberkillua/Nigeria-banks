@@ -1,7 +1,10 @@
 .header {
+  padding: 5rem 10rem;
   position: relative;
   height: 50vh;
-  // width: 100%;
+  @include small-screen {
+    padding: 5rem 3rem;
+  }
   .navigation {
     display: flex;
     align-items: center;

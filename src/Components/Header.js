@@ -1,11 +1,6 @@
 const Header = (props) => {
   const setBank = (e) => {
-    console.log(e.target.value);
-    // console.log(props.data);
-    const newArr = props.data.filter(
-      (item) => item.name.toUpperCase() === e.target.value.toUpperCase()
-    );
-    console.log(newArr);
+    props.setSearch(e.target.value)
   };
 
   return (

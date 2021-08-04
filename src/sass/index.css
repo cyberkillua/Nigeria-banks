@@ -17,13 +17,6 @@
 
 body {
   background-color: var(--primary-color);
-  padding: 5rem 10rem;
-}
-
-@media (max-width: 49em) {
-  body {
-    padding: 5rem 3rem;
-  }
 }
 
 html {
@@ -52,8 +45,15 @@ body {
 }
 
 .header {
+  padding: 5rem 10rem;
   position: relative;
   height: 50vh;
+}
+
+@media (max-width: 49em) {
+  .header {
+    padding: 5rem 3rem;
+  }
 }
 
 .header .navigation {
@@ -183,6 +183,7 @@ body {
 }
 
 .main-banks {
+  padding: 5rem 10rem;
   background-color: var(--secondary-color);
   color: var(--secondary-text-color);
   margin-top: 10rem;
@@ -190,8 +191,14 @@ body {
   min-height: 50vh;
 }
 
+@media (max-width: 49em) {
+  .main-banks {
+    padding: 5rem 3rem;
+  }
+}
+
 .main-banks-grid {
-  width: 90%;
+  width: 80%;
   margin: 0 auto 0 auto;
   display: -ms-grid;
   display: grid;
