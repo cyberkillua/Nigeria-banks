@@ -1,6 +1,6 @@
 const Header = (props) => {
   const setBank = (e) => {
-    props.setSearch(e.target.value)
+    props.setSearch(e.target.value);
   };
 
   return (
@@ -9,7 +9,10 @@ const Header = (props) => {
         <p>
           nigeria<span className="logo">BanksXYZ</span>
         </p>
-        <div className="navigation-search">
+      </nav>
+      <section className="header-primary">
+        <p className="header-primary-text">Generate transfer code</p>
+        <div className="header-primary-search">
           <input
             type="text"
             name="search"
@@ -17,12 +20,6 @@ const Header = (props) => {
             onChange={setBank}
           />
           <ion-icon name="search-outline" className="icon"></ion-icon>
-        </div>
-      </nav>
-      <section className="header-primary">
-        <p className="header-primary-text">Generate transfer code</p>
-        <div className="header-primary-search">
-          <input type="text" placeholder="Bank name" />
         </div>
       </section>
     </header>

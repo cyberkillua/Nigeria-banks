@@ -1,7 +1,7 @@
 .header {
   padding: 5rem 10rem;
   position: relative;
-  height: 50vh;
+  height: 40vh;
   @include small-screen {
     padding: 5rem 3rem;
   }
@@ -36,7 +36,7 @@
       input:focus-visible {
         outline: none;
       }
-     
+
       .icon {
         font-size: 5rem;
       }
@@ -47,7 +47,7 @@
     }
   }
   &-primary {
-    margin: 10rem auto 0 auto;
+    margin: 20rem auto 0 auto;
     text-align: center;
     width: 45%;
 
@@ -63,18 +63,36 @@
       font-weight: 600;
       line-height: 1.5;
       letter-spacing: -1px;
+      @include small-screen {
+        font-size: 4rem;
+      }
     }
     &-search {
-      margin-top: 2rem;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      width: 100%;
       height: 5rem;
+      border: 1px solid var(--gray-light);
+      padding: 1rem;
+      font-size: 2rem;
+      @include small-screen {
+        width: 80%;
+      }
+
       input {
-        width: 90%;
+        border: none;
         height: 100%;
+        width: 90%;
         padding: 1rem;
-        font-size: 1.7rem;
-        @include medium-screen {
-          width: 60%;
-        }
+        background-color: inherit;
+      }
+      input:focus-visible {
+        outline: none;
+      }
+
+      .icon {
+        font-size: 5rem;
       }
     }
   }
