@@ -47,14 +47,16 @@
     }
   }
   &-primary {
-    margin: 20rem auto 0 auto;
+    margin: 8rem auto 0 auto;
     text-align: center;
     width: 45%;
 
     @include medium-screen {
+      margin: 10rem auto 0 auto;
       width: 60%;
     }
     @include small-screen {
+      margin: 20rem auto 0 auto;
       width: 100%;
     }
 
