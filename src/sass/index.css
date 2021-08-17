@@ -139,6 +139,7 @@ body {
   width: 90%;
   padding: 1rem;
   background-color: inherit;
+  font-size: 100%;
 }
 
 .header-primary-search input:focus {
