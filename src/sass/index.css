@@ -141,6 +141,10 @@ body {
   background-color: inherit;
 }
 
+.header-primary-search input:focus {
+  outline: none;
+}
+
 .header-primary-search input:focus-visible {
   outline: none;
 }
