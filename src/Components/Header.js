@@ -11,7 +11,7 @@ const Header = (props) => {
         </p>
       </nav>
       <section className="header-primary">
-        <p className="header-primary-text">Search for Bank</p>
+        <p className="header-primary-text">Search for Bank USSD</p>
         <div className="header-primary-search">
           <input
             type="text"

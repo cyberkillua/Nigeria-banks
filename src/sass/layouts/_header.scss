@@ -4,6 +4,7 @@
   height: 40vh;
   @include small-screen {
     padding: 5rem 3rem;
+    height: 30vh;
   }
   .navigation {
     display: flex;
@@ -13,34 +14,8 @@
     @include small-screen {
       font-size: 3rem;
     }
-    &-search {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      width: 30%;
-      height: 5rem;
-      border: 1px solid var(--gray-light);
-      padding: 1rem;
-      font-size: 2rem;
-      @include small-screen {
-        width: 40%;
-      }
-
-      input {
-        border: none;
-        height: 100%;
-        width: 90%;
-        padding: 1rem;
-        background-color: inherit;
-      }
-      input:focus-visible {
-        outline: none;
-      }
-
-      .icon {
-        font-size: 5rem;
-      }
-    }
+   
+    
     .logo {
       color: var(--gray-light);
       font-weight: 400;
@@ -56,7 +31,7 @@
       width: 60%;
     }
     @include small-screen {
-      margin: 20rem auto 0 auto;
+      margin: 10rem auto 0 auto;
       width: 100%;
     }
 
